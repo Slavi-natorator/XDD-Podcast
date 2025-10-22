@@ -1,0 +1,75 @@
+/* Responsive square container */
+.carousel-container {
+  position: relative;
+  width: 100vw;        /* scales based on screen width */
+  height: 100vh;        /* scales based on screen height */
+  max-height: 800px;    /* won’t exceed 800px */
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 0px;
+  background-color: #000000;
+  
+}
+
+/* Sliding animation */
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Each image slide */
+.carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Downscale to fit inside container */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); /* 100% is normal, 50% is darker */
+}
+
+
+/* Dots (indicators) */
+.carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.carousel-dot.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.carousel-empty {
+  text-align: center;
+  color: #8a5454;
+  padding: 40px;
+}
+
+/* Adjust for mobile devices */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 60vh;
+  }
+}
