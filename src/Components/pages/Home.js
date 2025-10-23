@@ -4,7 +4,7 @@ import img1 from "./images/banner.jpg";
 import img2 from "./images/poster.png";
 import img3 from "./images/idk.jpg";
 
-const vid2 = "https://liak4p2lf7j65g3i.public.blob.vercel-storage.com/FAAAAHHH.mp4"
+
 
 export default function Home() {
   const slides = [
@@ -53,7 +53,9 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
         <div className="video-container">
           <div className="episode">
             <h3 className="episode-title">Episode 1: Introduction to AI</h3>
-            {renderVideo(VIDEO_1_URL, "Episode 1")}
+            <a href="https://www.facebook.com/share/v/19hMXd9hVu/" onClick={handleClick}>
+            <img src={img2} alt="Redirect Image"  className="video-container" />
+             </a>
             <p className="video-description">
               In our debut episode, we explore the fundamentals of AI technology, discussing its impact on our daily lives and what the future holds.
             </p>
@@ -61,22 +63,9 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
           
           <div className="episode">
             <h3 className="episode-title">Episode 2: AI in Practice</h3>
-            
-    <div style={{ textAlign: "center", marginTop: "2rem" }}>
-      <h1>My Video</h1>
-      <video
-        width="720"
-        height="405"
-        controls
-        preload="metadata"
-        style={{ borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }}
-      >
-        <source src={vid2} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  
-
+            <a href="https://youtu.be/odh9IGeADCc" onClick={handleClick}>
+            <img src={img3} alt="Redirect Image"  className="video-container"/>
+            </a>
             <p className="video-description">
               Our second episode dives deeper into practical applications of AI, featuring real-world examples and expert insights.
             </p>
