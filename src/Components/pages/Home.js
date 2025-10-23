@@ -4,8 +4,9 @@ import img1 from "./images/banner.jpg"; // ✅ Valid
 import img2 from "./images/poster.png"; // ✅ Valid
 import img3 from "./images/idk.jpg"; // ✅ Valid
 import ReactPlayer from 'react-player';
-import video from "./images/XDD PRODUCTIONS EP 1 (1).mp4";
-import video2 from  "./images/FAAAAHHH.mp4"
+// Replace these URLs with your actual Vercel Blob URLs after uploading
+const VIDEO_1_URL = "https://liak4p2lf7j65g3i.public.blob.vercel-storage.com/XDD%20PRODUCTIONS%20EP%201%20%281%29.mp4";
+const VIDEO_2_URL = "https://liak4p2lf7j65g3i.public.blob.vercel-storage.com/FAAAAHHH.mp4";
 export default function Home() {
    const slides = [
     { src: img1, alt: "Image 1" },
@@ -55,7 +56,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
             <div className="player-wrapper">
               <ReactPlayer
                 className="react-player"
-                src={video}
+                url={VIDEO_1_URL}
                 width="100%"
                 height="100%"
                 controls
@@ -71,7 +72,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
             <div className="player-wrapper">
               <ReactPlayer
                 className="react-player"
-                src={video2}
+                url={VIDEO_2_URL}
                 width="100%"
                 height="100%"
                 controls
