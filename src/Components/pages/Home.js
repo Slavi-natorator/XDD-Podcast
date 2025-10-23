@@ -3,8 +3,8 @@ import Carousel from "./carousel/Carousel.js";
 import img1 from "./images/banner.jpg";
 import img2 from "./images/poster.png";
 import img3 from "./images/idk.jpg";
-
-
+const link2 = "https://youtube/odh9IGeADCc"
+const link1 = "https://www.facebook.com/share/v/19hMXd9hVu/"
 
 export default function Home() {
   const slides = [
@@ -53,7 +53,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
         <div className="video-container">
           <div className="episode">
             <h3 className="episode-title">Episode 1: Introduction to AI</h3>
-            <a href="https://www.facebook.com/share/v/19hMXd9hVu/" onClick={handleClick}>
+            <a href={link1} onClick={handleClick}>
             <img src={img2} alt="Redirect Image"  className="video-container" />
              </a>
             <p className="video-description">
@@ -63,7 +63,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
           
           <div className="episode">
             <h3 className="episode-title">Episode 2: AI in Practice</h3>
-            <a href="https://youtu.be/odh9IGeADCc" onClick={handleClick}>
+            <a href={link2} onClick={handleClick}>
             <img src={img3} alt="Redirect Image"  className="video-container"/>
             </a>
             <p className="video-description">
