@@ -43,8 +43,7 @@ export default function Home() {
         <div className="column">
           <h1 className="column-title">CONTACT US</h1>
           <p className="column-text">Your thoughts, ideas, and feedback mean a lot to us — they help shape the conversations and insights we bring to every episode.
-
-Whether you’d like to collaborate, suggest a topic, share your expertise as a guest, or inquire about sponsorship opportunities, our team is always ready to connect. We believe that meaningful discussions about AI come from diverse perspectives — researchers, creators, students, and everyday tech users alike.</p>
+          Whether you’d like to collaborate, suggest a topic, share your expertise as a guest, or inquire about sponsorship opportunities, our team is always ready to connect. We believe that meaningful discussions about AI come from diverse perspectives — researchers, creators, students, and everyday tech users alike.</p>
         </div>
       </div>
 
@@ -53,7 +52,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
         <div className="video-container">
           <div className="episode">
             <h3 className="episode-title">Episode 1: Introduction to AI</h3>
-            <a href={link1} onClick={handleClick}>
+            <a href={link1} >
             <img src={img2} alt="Redirect Image"  className="video-container" />
              </a>
             <p className="video-description">
@@ -63,7 +62,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
           
           <div className="episode">
             <h3 className="episode-title">Episode 2: AI in Practice</h3>
-            <a href={link2} onClick={handleClick}>
+            <a href={link2} >
             <img src={img3} alt="Redirect Image"  className="video-container"/>
             </a>
             <p className="video-description">
