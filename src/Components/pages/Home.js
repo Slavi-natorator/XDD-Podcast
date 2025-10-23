@@ -1,57 +1,31 @@
 import "./Home.css";
 import Carousel from "./carousel/Carousel.js";
-import img1 from "./images/banner.jpg"; // ✅ Valid
-import img2 from "./images/poster.png"; // ✅ Valid
-import img3 from "./images/idk.jpg"; // ✅ Valid
-import ReactPlayer from 'react-player';
-import React, { useState } from 'react';
+import img1 from "./images/banner.jpg";
+import img2 from "./images/poster.png";
+import img3 from "./images/idk.jpg";
 
-// Replace these URLs with your actual Vercel Blob URLs after uploading
-const VIDEO_1_URL = "https://liak4p2lf7j65g3i.public.blob.vercel-storage.com/XDD%20PRODUCTIONS%20EP%201%20%281%29.mp4";
-const VIDEO_2_URL = "https://liak4p2lf7j65g3i.public.blob.vercel-storage.com/FAAAAHHH.mp4";
+const VIDEO_1_URL = "/videos/XDD_PRODUCTIONS_EP_1.mp4";
+const VIDEO_2_URL = "/videos/FAAAAHHH.mp4";
 
 export default function Home() {
-  const [videoError, setVideoError] = useState(false);
-
   const slides = [
     { src: img1, alt: "Image 1" },
     { src: img2, alt: "Image 2" },
     { src: img3, alt: "Image 3" },
   ];
 
-  const renderVideoPlayer = (url, title) => (
+  const renderVideo = (url, title) => (
     <div className="player-wrapper">
-      {videoError ? (
-        <iframe
-          src={url}
-          title={title}
-          width="100%"
-          height="100%"
-          allowFullScreen
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        />
-      ) : (
-        <ReactPlayer
-          className="react-player"
-          url={url}
-          width="100%"
-          height="100%"
-          controls
-          onError={(e) => {
-            console.error("Video playback error:", e);
-            setVideoError(true);
-          }}
-          config={{
-            file: {
-              attributes: {
-                crossOrigin: "anonymous",
-                controlsList: "nodownload",
-              },
-              forceVideo: true,
-            }
-          }}
-        />
-      )}
+      <video
+        className="video-player"
+        width="100%"
+        height="100%"
+        controls
+        playsInline
+      >
+        <source src={url} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 
@@ -95,7 +69,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
         <div className="video-container">
           <div className="episode">
             <h3 className="episode-title">Episode 1: Introduction to AI</h3>
-            {renderVideoPlayer(VIDEO_1_URL, "Episode 1")}
+            {renderVideo(VIDEO_1_URL, "Episode 1")}
             <p className="video-description">
               In our debut episode, we explore the fundamentals of AI technology, discussing its impact on our daily lives and what the future holds.
             </p>
@@ -103,7 +77,7 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
           
           <div className="episode">
             <h3 className="episode-title">Episode 2: AI in Practice</h3>
-            {renderVideoPlayer(VIDEO_2_URL, "Episode 2")}
+            {renderVideo(VIDEO_2_URL, "Episode 2")}
             <p className="video-description">
               Our second episode dives deeper into practical applications of AI, featuring real-world examples and expert insights.
             </p>
