@@ -3,7 +3,7 @@ import Carousel from "./carousel/Carousel.js";
 import img1 from "./images/banner.jpg";
 import img2 from "./images/poster.png";
 import img3 from "./images/idk.jpg";
-const link2 = "https://youtube/odh9IGeADCc"
+const link2 = "https://youtu.be/odh9IGeADCc?si=gcYy01-gEDWFBV-n"
 const link1 = "https://www.facebook.com/share/v/19hMXd9hVu/"
 
 export default function Home() {
@@ -52,8 +52,8 @@ export default function Home() {
         <div className="video-container">
           <div className="episode">
             <h3 className="episode-title">Episode 1: Introduction to AI</h3>
-            <a href={link1} >
-            <img src={img2} alt="Redirect Image"  className="video-container" />
+            <a href={link1}>
+            <img src={img2} alt="mn" className="video-container" />
              </a>
             <p className="video-description">
               In our debut episode, we explore the fundamentals of AI technology, discussing its impact on our daily lives and what the future holds.
@@ -62,8 +62,8 @@ export default function Home() {
           
           <div className="episode">
             <h3 className="episode-title">Episode 2: AI in Practice</h3>
-            <a href={link2} >
-            <img src={img3} alt="Redirect Image"  className="video-container"/>
+            <a href={link2}>
+            <img src={img1} alt="mn" className="video-container"/>
             </a>
             <p className="video-description">
               Our second episode dives deeper into practical applications of AI, featuring real-world examples and expert insights.

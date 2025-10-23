@@ -135,12 +135,14 @@
   font-weight: 700;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .carousel-text p {
   font-size: 2rem;
   font-weight: 300;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .video-section {
@@ -160,6 +162,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .episode {
@@ -171,6 +176,7 @@
   color: var(--primary);
   margin-bottom: 1.5rem;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .player-wrapper {
@@ -195,6 +201,7 @@
   color: var(--text-light);
   text-align: center;
   padding: 0 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero-section {
@@ -211,6 +218,7 @@
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  font-style: arial; 
 }
 
 @media (max-width: 1024px) {

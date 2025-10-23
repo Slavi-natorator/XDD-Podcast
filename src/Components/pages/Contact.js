@@ -15,42 +15,42 @@ function Contact() {
     {
       name: "Neo Artillo",
       fbLink: "https://www.facebook.com/neo.artillo",
-      role: "technical support",
+      role: "Technical Support",
     },
     {
       name: "Klienth Christian Britania",
       fbLink: "https://www.facebook.com/klienthchristian.britania",
-      role: "show Host",
+      role: "Show Host",
     },
     {
       name: "Daniel Britanico",
       fbLink: "https://www.facebook.com/daniel.mar10brits",
-      role: "technical  support",
+      role: "Technical Support",
     },
     {
       name: "Gabgab Degala",
       fbLink: "https://www.facebook.com/Gabgab.degala",
-      role: "technical  support",
+      role: "Technical Support",
     },
     {
       name: "Charles Encarguis",
       fbLink: "https://www.facebook.com/charles.encarguis.9",
-      role: "Script writer",
+      role: "Script Writer",
     },
     {
       name: "Alex Enecito",
       fbLink: "https://www.facebook.com/alex.enecito",
-      role: "technical  support",
+      role: "Technical Support",
     },
     {
       name: "Siyan Earl",
       fbLink: "https://www.facebook.com/siyan.earl.2025",
-      role: "technical  support",
+      role: "Technical Support",
     },
     {
       name: "Johnlee Loyola",
       fbLink: "https://www.facebook.com/johnlee.loyola.2025",
-      role: "show Host",
+      role: "Show Host",
     },
     {
       name: "Vince Orcajada",
@@ -60,7 +60,7 @@ function Contact() {
     {
       name: "Kazoto Tempess",
       fbLink: "https://www.facebook.com/kazoto.tempess",
-      role: "Script writer",
+      role: "Script Writer",
     },
   ];
 

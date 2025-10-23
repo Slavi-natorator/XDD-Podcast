@@ -2,12 +2,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .member-card {
@@ -18,6 +20,7 @@
   transition: transform 0.3s ease;
   padding: 1.5rem;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .member-card:hover {
@@ -37,6 +40,7 @@
   border-radius: 5px;
   margin-top: 1rem;
   transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .fb-link:hover {
@@ -45,17 +49,20 @@
 
 .member-info {
   padding: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .member-name {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   color: #2c3e50;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .member-role {
   font-size: 0.9rem;
   color: #7f8c8d;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 1024px) {
