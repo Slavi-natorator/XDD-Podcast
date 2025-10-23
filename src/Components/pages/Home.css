@@ -223,7 +223,8 @@
 
 @media (max-width: 1024px) {
   .grid-container {
-    padding: 2rem 4%;
+     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .carousel-text h1 {
@@ -240,6 +241,10 @@
 
   .player-wrapper {
     width: 90%;
+  }
+  
+  .column-text {
+    font-size: 0.95rem;
   }
 }
 
@@ -285,6 +290,13 @@
   .player-wrapper {
     width: 100%;
   }
+  
+  .video-container {
+    max-width: 500px;
+  }
+  .video-description {
+    font-size: 1rem;
+    padding: 0 1rem;
 }
 
 @media (max-width: 480px) {
@@ -300,4 +312,5 @@
     font-size: 0.9rem;
     padding: 0 1rem;
   }
+}
 }
