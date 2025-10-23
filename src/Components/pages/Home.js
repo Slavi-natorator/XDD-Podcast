@@ -4,8 +4,7 @@ import img1 from "./images/banner.jpg";
 import img2 from "./images/poster.png";
 import img3 from "./images/idk.jpg";
 
-const VIDEO_1_URL = "/videos/XDD_PRODUCTIONS_EP_1.mp4";
-const VIDEO_2_URL = "/videos/FAAAAHHH.mp4";
+const vid2 = "https://liak4p2lf7j65g3i.public.blob.vercel-storage.com/FAAAAHHH.mp4"
 
 export default function Home() {
   const slides = [
@@ -13,21 +12,6 @@ export default function Home() {
     { src: img2, alt: "Image 2" },
     { src: img3, alt: "Image 3" },
   ];
-
-  const renderVideo = (url, title) => (
-    <div className="player-wrapper">
-      <video
-        className="video-player"
-        width="100%"
-        height="100%"
-        controls
-        playsInline
-      >
-        <source src={url} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  );
 
   return (
     <div className="home-container">
@@ -77,7 +61,22 @@ Whether you’d like to collaborate, suggest a topic, share your expertise as a 
           
           <div className="episode">
             <h3 className="episode-title">Episode 2: AI in Practice</h3>
-            {renderVideo(VIDEO_2_URL, "Episode 2")}
+            
+    <div style={{ textAlign: "center", marginTop: "2rem" }}>
+      <h1>My Video</h1>
+      <video
+        width="720"
+        height="405"
+        controls
+        preload="metadata"
+        style={{ borderRadius: "8px", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" }}
+      >
+        <source src={vid2} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  
+
             <p className="video-description">
               Our second episode dives deeper into practical applications of AI, featuring real-world examples and expert insights.
             </p>
