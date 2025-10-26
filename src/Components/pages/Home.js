@@ -3,7 +3,7 @@ import Carousel from "./carousel/Carousel.js";
 import img1 from "./images/banner.jpg";
 import img2 from "./images/poster.png";
 import img3 from "./images/idk.jpg";
-const link2 = "https://youtu.be/odh9IGeADCc?si=gcYy01-gEDWFBV-n"
+const link2 = "https://youtu.be/e6Mt6jdDTR4?si=7WtrgHGZrqI7nOvg"
 const link1 = "https://www.facebook.com/share/v/19hMXd9hVu/"
 
 export default function Home() {
